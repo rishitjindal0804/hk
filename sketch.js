@@ -151,7 +151,7 @@ fill("white")
 
 function spawnObstacles(){
  if (frameCount % 150 === 0){
-   var obstacle = createSprite(400,height-150,10,40);
+   var obstacle = createSprite(200,height-150,10,40);
    obstacle.velocityX = -(4+score/100);
    
     //generate random obstacles
