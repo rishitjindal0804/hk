@@ -31,11 +31,11 @@ function setup() {
    background = createSprite(width/2,height/2,width ,height);
   background.addImage(back); 
   
-  monkey = createSprite(80,height-150,20,50);
+  monkey = createSprite(80,height-80,20,50);
   monkey.addAnimation("running", monkey_running);
   monkey.scale = 0.2;
   
-  ground = createSprite(200,height-120,900,20);
+  ground = createSprite(200,height-50,900,20);
   ground.velocityX= -4;
   ground.x = ground.width /2;
     ground.log=(ground.x);
@@ -146,7 +146,7 @@ function draw() {
 stroke("white");
   textSize (20);
 fill("white")
-      text("Score: "+ score,500,50);
+      text("Score: "+ score,50,250);
 }
 
 function spawnObstacles(){
